@@ -87,7 +87,7 @@ Response Example:
 
 More endpoints and details will be added as development progresses.
 
-Contributing
+## Contributing
 
 Contributions are welcome! Follow these steps to contribute to Aura Core:
 	1.	Fork the repository.
@@ -97,18 +97,18 @@ Contributions are welcome! Follow these steps to contribute to Aura Core:
 
 Please ensure all contributions follow the coding standards and include proper documentation.
 
-Development Process
+## Development Process
 
 	•	The master branch is regularly updated and tested but may not always be stable.
 	•	Release branches are created to indicate stable versions of Aura Core.
 
-Security Notes
+## Security Notes
 
 To ensure security while using Aura Core:
 	•	Store private keys securely and never share them.
 	•	Use firewalls and VPNs to secure your network.
 	•	Keep your dependencies updated to avoid vulnerabilities.
 
-License
+## License
 
 This project is licensed under the MIT License. For more information, see the LICENSE file.
