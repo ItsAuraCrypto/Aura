@@ -1,12 +1,12 @@
 # Aura Core
 
-Aura Core is the foundational framework of the Aura blockchain, providing protocols, mining algorithms, and consensus mechanisms. It is designed for security, decentralization, and scalability, offering core features for mining, validation, and blockchain management.
+Aura Core is the foundational framework of the Aura blockchain, encompassing protocols, mining algorithms, and consensus mechanisms. Designed for security, decentralization, and scalability, Aura Core offers advanced features for mining and blockchain validation.
 
 ---
 
 ## Prerequisites
 
-Before you begin, ensure you have the following installed on your system:
+Before setting up the project, ensure the following tools are installed:
 
 - **Node.js** (version 14 or higher)
 - **npm** (Node Package Manager)
@@ -15,9 +15,10 @@ Before you begin, ensure you have the following installed on your system:
 
 ## Installation
 
-Follow these steps to set up and run Aura Core:
+Follow these steps to set up Aura Core:
 
-1. **Clone the repository**:
+1. Clone the repository:
+
    ```bash
    git clone https://github.com/ItsAuraCrypto/Aura-Core.git
 
@@ -35,24 +36,26 @@ npm install
 
 npm start
 
-This will initialize the blockchain node and begin the mining process. Mined blocks will be validated and stored on the blockchain.
+
+
+This will start the node and initialize the mining process. Mined blocks will be validated and stored on the blockchain.
 
 Features
 
-Core Features:
+Core Features
 
-	•	Proof-of-Work (PoW): A secure and fair mining algorithm.
-	•	Decentralized Validation: Independent validation of blocks by multiple nodes.
-	•	Optimized Transactions: Faster block validation and transaction processing.
-	•	Smart Contracts (coming soon): Support for programmable blockchain interactions.
+	•	Proof-of-Work (PoW): Secure and fair mining algorithm.
+	•	Decentralized Validation: Blocks are validated independently by multiple nodes.
+	•	Fast Block Validation: Optimized for rapid transaction processing.
+	•	Smart Contracts (coming soon): Support for programmable transactions.
 
-API Endpoints
+## API Documentation
 
-Aura Core provides the following APIs for interaction with the blockchain:
+Aura Core provides an API for interacting with the blockchain.
 
 GET /api/blockchain
 
-Retrieves the latest blocks in the blockchain.
+Retrieve the latest blocks in the blockchain.
 
 Response Example:
 
@@ -60,7 +63,7 @@ Response Example:
   "blocks": [
     {
       "block_id": "1",
-      "timestamp": "2024-11-22",
+      "timestamp": "2024-11-20",
       "transactions": [...]
     }
   ]
@@ -68,7 +71,7 @@ Response Example:
 
 POST /api/transaction
 
-Adds a new transaction to the blockchain.
+Add a new transaction to the blockchain.
 
 Request Example:
 
@@ -85,30 +88,38 @@ Response Example:
   "transaction_id": "txn_12345"
 }
 
-More endpoints and details will be added as development progresses.
-
 ## Contributing
 
-Contributions are welcome! Follow these steps to contribute to Aura Core:
-	1.	Fork the repository.
+We welcome contributions to Aura Core! To contribute:
+	1.	Fork this repository.
 	2.	Create a new branch for your changes.
 	3.	Make and test your changes.
-	4.	Submit a pull request with a clear description of your changes.
-
-Please ensure all contributions follow the coding standards and include proper documentation.
+	4.	Submit a pull request with a clear description of the changes.
 
 ## Development Process
 
-	•	The master branch is regularly updated and tested but may not always be stable.
-	•	Release branches are created to indicate stable versions of Aura Core.
+	•	The master branch is updated regularly but may not always be stable.
+	•	Stable versions are indicated by release branches and tags.
+
+## Testing
+
+Testing and review are critical for maintaining project quality:
+	1.	Write and run unit tests for any new code.
+	2.	Use the following command to execute unit tests:
+
+ctest
+
+
+	3.	For regression and integration tests (written in Python), run:
+
+build/test/functional/test_runner.py
 
 ## Security Notes
 
-To ensure security while using Aura Core:
-	•	Store private keys securely and never share them.
-	•	Use firewalls and VPNs to secure your network.
-	•	Keep your dependencies updated to avoid vulnerabilities.
+	•	Securely store your node’s private keys.
+	•	Use firewalls and VPNs to protect your network.
+	•	Keep dependencies updated to avoid vulnerabilities.
 
 ## License
 
-This project is licensed under the MIT License. For more information, see the LICENSE file.
+Aura Core is licensed under the MIT License. See the LICENSE file for details.
