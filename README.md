@@ -147,8 +147,11 @@ Aura Core is open-source and released under the MIT License.
 ## 🤝 Support
 
 For questions or support, please contact us via:  
-- **Email**: itsauracrypto@gmail.com
-- **Telegram**: [Aura Telegram Channel](https://t.me/itsauracrypto)  
-- **Social Media**: [Twitter / X](https://twitter.com/ItsAuraCrypto)
+- **Email**:
+[Email](itsauracrypto@gmail.com)
+- **Telegram**:
+[Telegram Channel](https://t.me/itsauracommunity)  
+- **Social Media**:
+[Twitter / X](https://twitter.com/ItsAuraCrypto)
 
 > Together, let's build a decentralized future!  
