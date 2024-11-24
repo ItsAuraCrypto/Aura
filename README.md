@@ -1,149 +1,154 @@
-# 🌌 Aura Core  
+# Aura Core  
 
-Aura Core is the foundational framework of the Aura blockchain, combining cutting-edge protocols, secure consensus mechanisms, and efficient mining algorithms. Designed for **security**, **decentralization**, and **scalability**, Aura Core lays the groundwork for advanced blockchain validation and transactions.  
+Aura Core is the foundational blockchain system for the **Aura project**, designed specifically for large-scale transactions and high-performance devices. It employs advanced consensus mechanisms and cutting-edge technologies to ensure scalability, security, and environmental responsibility.  
+
+## 🌟 Key Features  
+
+1. **Hybrid Consensus Mechanism**: Combines:
+   - **Proof of Work (PoW)** for enhanced network security.
+   - **Proof of Stake (PoS)** to minimize environmental impact.
+   - Future advanced systems to further strengthen the network.  
+
+2. **Hardware Verification System**:  
+   - Devices must pass a **hardware test** to qualify for mining.
+   - Ensures only powerful devices can participate in Aura Core, boosting network security and performance.  
+
+3. **Dynamic Load Balancing**:  
+   - Optimally allocates resources based on device capacity.  
+   - Gaps in the network are filled dynamically, akin to server load management.  
+
+4. **Developer-Friendly**:  
+   - Fully open-source and accessible via GitHub.  
+   - Encourages global collaboration to improve and expand the system.  
+
+5. **High Scalability & Low Fees**:  
+   - Supports large transactions with low gas fees.  
+   - Designed to handle high transaction throughput (TPS).  
+
+6. **Environmentally Conscious**:  
+   - Balanced PoW and PoS usage reduces global warming and energy consumption.  
 
 ---
 
-## 🚀 Features  
+## 💻 Minimum Hardware Requirements  
 
-### Core Features  
-- **Proof-of-Work (PoW):** Secure and fair mining algorithm.  
-- **Decentralized Validation:** Blocks are validated independently by multiple nodes, ensuring trustless consensus.  
-- **Fast Block Validation:** Optimized for high-speed transaction processing.  
-- **Smart Contracts (coming soon):** Support for programmable transactions and decentralized applications.  
+To ensure high performance and network security, the following hardware specifications are required:  
 
-### API Features  
-Aura Core provides a robust RESTful API for interacting with the blockchain:  
-- Retrieve blockchain data.  
-- Add and validate transactions.  
-- Monitor network status.  
+- **Processor**: Minimum 8-core CPU.  
+- **Graphics**: Minimum 4 GB VRAM, DirectX 12 compatible.  
+- **Memory**: 16 GB RAM or higher.  
+- **Storage**: 512 GB SSD with at least 256 GB available.  
+- **Network**: Stable internet connection (500 Mbps or higher).  
+
+> Devices below these specifications will not be able to mine Aura Core.  
 
 ---
 
-## 🔧 Prerequisites  
+## ⚡ How It Works  
 
-Before setting up the project, ensure the following tools are installed:  
+### 1. **Mining**  
+- Mining is accessible only to high-performance devices.  
+- Rewards are distributed based on a hybrid mechanism:  
+  - **50% PoW**: For transaction validation and security.  
+  - **50% PoS**: For staking and contributing to network sustainability.  
 
-- **Node.js** (version 14 or higher)  
-- **npm** (Node Package Manager)  
-- **Python** (for testing and development tools)  
+### 2. **Dynamic Resource Allocation**  
+- Devices are assessed for their processing power, and space is allocated proportionally.  
+- Underutilized resources are redistributed dynamically to maximize efficiency.  
+
+### 3. **Decentralization**  
+- Fully decentralized with no central authority.  
+- Voting systems (DV & UV) enable users and developers to decide on major changes.  
+
+### 4. **Security**  
+- Prevents 51% attacks through additional security layers like **PST** and **POA**.  
+- All transactions are encrypted and recorded immutably on the blockchain.  
 
 ---
 
-## 📥 Installation  
+## 🌍 Why Choose Aura Core?  
 
-Follow these steps to set up and run Aura Core:  
+- **Scalability**: Handles large-scale transactions seamlessly.  
+- **Inclusivity**: Open-source and accessible for collaboration worldwide.  
+- **Security**: Advanced mechanisms protect against common blockchain attacks.  
+- **Eco-Friendly**: Combines security with sustainability through PoS integration.  
 
-1. **Clone the Repository:**  
-   ```sh
+---
+
+## 🔧 Installation  
+
+### Prerequisites  
+- **Operating System**: Windows 10/11, Linux, or macOS (latest versions).  
+- **Software**: Git, Docker (recommended for running nodes).  
+
+### Steps  
+1. Clone the repository:  
+   ```bash
    git clone https://github.com/ItsAuraCrypto/Aura-Core.git
    cd Aura-Core
 
-	2.	Install Dependencies:
+	2.	Build the project:
 
-npm install
-
-
-	3.	Start the Blockchain Node:
-
-npm start
-
-This will initialize the blockchain and begin mining blocks. Mined blocks are validated and added to the blockchain.
-
-## 📦 API Documentation
-
-GET /api/blockchain
-
-Retrieve the latest blocks in the blockchain.
-
-Response Example:
-
-{
-  "blocks": [
-    {
-      "block_id": "1",
-      "timestamp": "2024-11-20T10:00:00Z",
-      "transactions": [
-        {
-          "transaction_id": "txn_123",
-          "sender": "address_1",
-          "receiver": "address_2",
-          "amount": 100
-        }
-      ]
-    }
-  ]
-}
-
-POST /api/transaction
-
-Add a new transaction to the blockchain.
-
-Request Example:
-
-{
-  "sender": "address_1",
-  "receiver": "address_2",
-  "amount": 10
-}
-
-Response Example:
-
-{
-  "status": "success",
-  "transaction_id": "txn_12345"
-}
-
-## 🤝 Contribution
-
-We welcome contributions to Aura Core! Here’s how you can help:
-	1.	Fork this Repository:
-Create your own copy of the project.
-	2.	Create a New Branch:
-
-git checkout -b feature/your-feature-name
+docker-compose up --build
 
 
-	3.	Make and Test Changes:
-	•	Write clean and efficient code.
-	•	Add appropriate tests for your changes.
-	4.	Submit a Pull Request:
-	•	Describe your changes clearly.
-	•	Submit your PR for review.
+	3.	Run the node:
 
-## Development Guidelines
-
-	•	Follow our Code of Conduct.
-	•	Ensure all new features are tested and documented.
-	•	Use descriptive commit messages and adhere to the project’s coding style.
-
-## ⚙️ Testing
-
-Testing is critical for maintaining the quality of Aura Core. Follow these steps to run tests:
-	1.	Unit Tests:
-Run the unit tests:
-
-ctest
+./auracore --start-node
 
 
-	2.	Functional Tests:
-For regression and integration tests (written in Python), execute:
+	4.	Monitor logs:
 
-python build/test/functional/test_runner.py
+./auracore --logs
 
-## 🔐 Security Notes
 
-To maintain the security of your Aura Core node:
-• Secure Private Keys: Store private keys in a secure location.
-• Firewall Protection: Use firewalls and VPNs to protect your network.
-• Update Regularly: Keep dependencies and the Aura Core software updated to avoid vulnerabilities.
+
+For detailed setup instructions, refer to the Installation Guide.
+
+## 🛠 Debugging
+
+Common Issues
+
+	1.	Low Performance
+	•	Ensure your device meets the minimum hardware requirements.
+	•	Verify stable internet connection.
+	2.	Node Sync Issues
+	•	Check firewall settings to ensure ports are open.
+	•	Restart the node and monitor logs.
+
+	For further troubleshooting, visit the FAQ Section.
+
+## 📊 Roadmap
+
+	•	2024 Q1: Launch of Aura Core testnet.
+	•	2024 Q3: Introduction of advanced hybrid mechanisms.
+	•	2025 Q1: Full launch of Aura Core mainnet.
+	•	2025 Q4: Integration with Aura Lite and Telegram mini-app.
+
+## 🧑‍💻 Contribution
+
+We welcome developers from all over the world to contribute!
+
+How to Contribute:
+
+	1.	Fork the repository.
+	2.	Make your changes in a new branch.
+	3.	Submit a pull request with detailed explanations.
+
+Development Guidelines
+
+	•	Follow the Code of Conduct.
+	•	Ensure all changes pass tests before submitting.
 
 ## 📜 License
 
-Aura Core is licensed under the MIT License, ensuring openness and freedom to use, modify, and distribute the code. See the LICENSE file for details.
+Aura Core is open-source and released under the MIT License.
 
-## 🌌 Acknowledgments
+## 🤝 Support
 
-Aura Core is inspired by groundbreaking projects like Bitcoin and Ethereum. We extend our gratitude to the open-source community for their continuous support and innovation.
+For questions or support, please contact us via:  
+- **Email**: itsauracrypto@gmail.com
+- **Telegram**: [Aura Telegram Channel](https://t.me/itsauracrypto)  
+- **Social Media**: [Twitter / X](https://twitter.com/ItsAuraCrypto)
 
-Together, let’s shape the future of decentralization and innovation! 🚀
+> Together, let's build a decentralized future!  
