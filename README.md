@@ -120,10 +120,10 @@ Common Issues
 
 ## 📊 Roadmap
 
-	•	2024 Q1: Launch of Aura Core testnet.
-	•	2024 Q3: Introduction of advanced hybrid mechanisms.
-	•	2025 Q1: Full launch of Aura Core mainnet.
-	•	2025 Q4: Integration with Aura Lite and Telegram mini-app.
+	•	1: Launch of Aura Core testnet.
+	•	2: Introduction of advanced hybrid mechanisms.
+	•	3: Full launch of Aura Core mainnet.
+	•	4: Integration with Aura Lite and Telegram mini-app.
 
 ## 🧑‍💻 Contribution
 
