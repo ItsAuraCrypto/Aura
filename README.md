@@ -1,143 +1,144 @@
 # Aura Core
 
-**Aura Core** is the foundational blockchain system for the **Aura project**, designed specifically for large-scale transactions and high-performance devices. It employs advanced consensus mechanisms and cutting-edge technologies to ensure scalability, security, and environmental responsibility.
+Aura Core is the foundational blockchain system for the **Aura project**, designed specifically for large-scale transactions and high-performance devices. It employs advanced consensus mechanisms and cutting-edge technologies to ensure scalability, security, and environmental responsibility.
 
 ---
 
 ## 🌟 Key Features
 
-1. **Hybrid Consensus Mechanism**: Combines:  
-   - **Proof of Work (PoW)** for enhanced network security.  
-   - **Proof of Stake (PoS)** to minimize environmental impact.  
+1. **Hybrid Consensus Mechanism**:
+   - Combines **Proof of Work (PoW)** and **Proof of Stake (PoS)** for high security and sustainability.
 
-2. **Optimized Participation**:  
-   - Devices must meet a specific **hardware standard** to maintain network stability and security.  
-   - Ensures a high-quality and efficient blockchain environment.  
+2. **Hardware Compatibility**:
+   - Accessible to moderately powerful devices for mining and participation.
 
-3. **Dynamic Load Balancing**:  
-   - Optimally allocates resources based on device capacity.  
-   - Gaps in the network are filled dynamically, akin to server load management.  
+3. **Dynamic Load Balancing**:
+   - Resources are allocated based on device capacity, ensuring efficiency.
 
-4. **Developer-Friendly**:  
-   - Fully open-source and accessible via GitHub.  
-   - Encourages global collaboration to improve and expand the system.  
+4. **Developer-Friendly**:
+   - Fully open-source and accessible via GitHub to encourage global collaboration.
 
-5. **High Scalability & Low Fees**:  
-   - Supports large transactions with low gas fees.  
-   - Designed to handle high transaction throughput (TPS).  
+5. **High Scalability & Low Fees**:
+   - Supports large transactions with low gas fees and high transaction throughput.
 
-6. **Environmentally Conscious**:  
-   - Balanced PoW and PoS usage reduces global warming and energy consumption.  
+6. **Decentralization**:
+   - Ensures fair participation and network governance with community voting.
 
 ---
 
 ## 💻 Minimum Hardware Requirements
 
-To ensure high performance and network security, the following hardware specifications are recommended:
-
-- **Processor**: Minimum 4-core CPU, 2 GHz or higher.  
-- **Graphics**: Minimum 2 GB VRAM, DirectX 12 compatible or equivalent.  
-- **Memory**: 8 GB RAM or higher.  
-- **Storage**: 128 GB SSD with at least 64 GB available.  
-- **Network**: Stable internet connection (minimum 10 Mbps).
-
-> Devices below these specifications can participate through **Aura Lite**.
+- **Processor**: Quad-core CPU (e.g., Intel i5 or Ryzen 3).
+- **Graphics**: Integrated graphics or discrete GPU with 2 GB VRAM.
+- **Memory**: 8 GB RAM or higher.
+- **Storage**: 256 GB SSD with at least 128 GB available.
+- **Network**: Stable internet connection (10 Mbps or higher).
 
 ---
 
 ## ⚡ How It Works
 
-### 1. **Mining**  
-- Mining is accessible to mid-range and high-performance devices.  
-- Rewards are distributed based on a hybrid mechanism:  
-  - **50% PoW**: For transaction validation and security.  
-  - **50% PoS**: For staking and contributing to network sustainability.  
+### 1. Mining
+- Accessible to moderately powerful devices.
+- Rewards distributed through a hybrid system:
+  - **PoW (50%)**: For validating transactions.
+  - **PoS (50%)**: For staking and sustainability.
 
-### 2. **Dynamic Resource Allocation**  
-- Devices are assessed for their processing power, and space is allocated proportionally.  
-- Underutilized resources are redistributed dynamically to maximize efficiency.  
+### 2. Resource Allocation
+- Dynamically assesses device capacity and allocates resources proportionally.
 
-### 3. **Decentralization**  
-- Fully decentralized with no central authority.  
-- Voting systems enable users and developers to decide on major changes.  
+### 3. Decentralization
+- Implements a fair voting system for decision-making and upgrades.
 
-### 4. **Security**  
-- Prevents 51% attacks through additional security layers like **PST** and **POA**.  
-- All transactions are encrypted and recorded immutably on the blockchain.  
+### 4. Security
+- Prevents attacks through advanced algorithms like **PST** and **POA**.
+- Transactions are encrypted and immutably stored on the blockchain.
 
 ---
 
 ## 🌍 Why Choose Aura Core?
 
-- **Scalability**: Handles large-scale transactions seamlessly.  
-- **Inclusivity**: Open-source and accessible for collaboration worldwide.  
-- **Security**: Advanced mechanisms protect against common blockchain attacks.  
-- **Eco-Friendly**: Combines security with sustainability through PoS integration.  
+- **Efficiency**: Optimized for modern devices with moderate hardware.
+- **Accessibility**: Encourages participation across a broad range of users.
+- **Security**: Advanced mechanisms protect against common attacks.
+- **Eco-Friendly**: Balances security with sustainability.
 
 ---
 
 ## 🔧 Installation
 
-### Prerequisites  
-- **Operating System**: Windows, Linux, or macOS (latest versions).  
-- **Software**: Git, Docker (recommended for running nodes).  
+### Prerequisites
+- **Operating System**: Windows 10/11, Linux, or macOS.
+- **Software**: Git, Python (v3.10+), and Docker (recommended for running nodes).
 
-### Steps  
-1. Clone the repository:  
+### Steps
+1. Clone the repository:
    ```bash
    git clone https://github.com/ItsAuraCrypto/Aura-Core.git
    cd Aura-Core
 
-	2.	Build the project:
+	2.	Install dependencies:
 
-docker-compose up --build
+pip install -r requirements.txt
 
 
 	3.	Run the node:
 
-./auracore --start-node
-
-
-	4.	Monitor logs:
-
-./auracore --logs
+python main.py
 
 
 
 For detailed setup instructions, refer to the Installation Guide.
 
-📊 Roadmap
+## 🛠 Debugging
 
-	1.	Launch of Aura Core testnet.
-	2.	Introduction of advanced hybrid mechanisms.
-	3.	Full launch of Aura Core mainnet.
-	4.	Integration with Aura Lite and Telegram mini-app.
+Common Issues
 
-🧑‍💻 Contribution
+	1.	Low Performance:
+	•	Ensure your device meets the minimum hardware requirements.
+	•	Verify stable internet connection.
+	2.	Node Sync Issues:
+	•	Check firewall settings to ensure ports are open.
+	•	Restart the node and monitor logs.
+
+For further troubleshooting, visit the FAQ Section.
+
+## 📊 Roadmap
+
+	1.	Testnet Launch:
+	•	Initial rollout of Aura Core for testing and feedback.
+	2.	Advanced Mechanism Integration:
+	•	Introduce enhancements to PoW/PoS and security protocols.
+	3.	Mainnet Launch:
+	•	Deploy a stable version of Aura Core for public use.
+	4.	Integration with Aura Lite:
+	•	Connect Aura Core to Aura Lite for seamless ecosystem interaction.
+
+## 🧑‍💻 Contribution
 
 We welcome developers from all over the world to contribute!
 
-How to Contribute
+### How to Contribute
 
 	1.	Fork the repository.
 	2.	Make your changes in a new branch.
 	3.	Submit a pull request with detailed explanations.
 
-Development Guidelines
+### Development Guidelines
 
 	•	Follow the Code of Conduct.
 	•	Ensure all changes pass tests before submitting.
 
-📜 License
+## 📜 License
 
 Aura Core is open-source and released under the MIT License.
 
-🤝 Support
+## 🤝 Support
 
 For questions or support, please contact us via:
-	•	Email: itsauracrypto@gmail.com
-	•	Telegram: Telegram Channel
-	•	Social Media: Twitter / X
 
-	Together, let’s build a decentralized future!
+• Email: itsauracrypto@gmail.com
 
+• Telegram: https://t.me/itsauracommunity
+
+• X / Twitter: https://twitter.com/ItsAuraCrypto
