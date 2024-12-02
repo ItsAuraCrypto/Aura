@@ -1,0 +1,31 @@
+name: Continuous Integration (CI)
+
+on:
+  push:
+    branches:
+      - main  # When a push is made to the main branch, this workflow will run
+  pull_request:
+    branches:
+      - main  # When a pull request is made to the main branch, this workflow will run
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # This job will run on the latest Ubuntu environment
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2  # This step checks out the code from the repository to the GitHub runner
+
+    - name: Set up Python
+      uses: actions/setup-python@v2  # This step sets up the Python environment
+      with:
+        python-version: '3.8'  # Set the Python version you want to use
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip  # Upgrade pip to the latest version
+        pip install -r requirements.txt  # Install dependencies listed in the requirements.txt file
+
+    - name: Run tests
+      run: |
+        pytest  # Run the tests using pytest (you can replace this with other testing commands if needed)
