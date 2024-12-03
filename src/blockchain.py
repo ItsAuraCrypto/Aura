@@ -1,33 +1,24 @@
 """
-This module handles blockchain operations, such as adding blocks, validating the chain, and managing transactions.
+This module contains the Blockchain class, responsible for managing the blockchain and its blocks.
 """
 
 class Blockchain:
     """
-    Represents the blockchain and its main functionalities.
+    Blockchain class to represent the structure and functionality of the blockchain.
     """
 
     def __init__(self):
-        """
-        Initializes the blockchain with a genesis block and sets up the chain.
-        """
         self.chain = []
-        self.pending_transactions = []
+        self.create_genesis_block()
 
-    def add_block(self, block):
+    def create_genesis_block(self):
+        """
+        Creates the first block (genesis block) in the blockchain.
+        """
+        self.chain.append("Genesis Block")
+
+    def add_block(self, data):
         """
         Adds a new block to the blockchain.
-
-        Args:
-            block (dict): The block data to be added.
         """
-        self.chain.append(block)
-
-    def validate_chain(self):
-        """
-        Validates the entire blockchain to ensure all blocks are linked correctly.
-
-        Returns:
-            bool: True if the blockchain is valid, False otherwise.
-        """
-        pass
+        self.chain.append(data)
