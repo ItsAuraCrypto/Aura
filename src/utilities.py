@@ -1,9 +1,29 @@
-# src/utilities.py
-# This module provides general utility functions.
+"""
+This module provides utility functions for the blockchain application.
+"""
 
-import hashlib
+def calculate_hash(data):
+    """
+    Calculates the hash of given data.
 
-def hash_block(block):
-    """Generate a SHA-256 hash for a block."""
-    block_string = str(block).encode()
-    return hashlib.sha256(block_string).hexdigest()
+    Args:
+        data (dict): The data to be hashed.
+
+    Returns:
+        str: The resulting hash value.
+    """
+    pass
+
+def validate_signature(signature, data, public_key):
+    """
+    Validates a digital signature.
+
+    Args:
+        signature (str): The signature to validate.
+        data (dict): The signed data.
+        public_key (str): The public key used for validation.
+
+    Returns:
+        bool: True if the signature is valid, False otherwise.
+    """
+    pass
