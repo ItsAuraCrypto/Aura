@@ -1,3 +1,9 @@
+"""
+Short description of this module's purpose.
+
+Detailed explanation about what this file does and its role in the project.
+"""
+
 # src/blockchain.py
 # This module manages the blockchain and blocks.
 
