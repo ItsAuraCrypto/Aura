@@ -1,12 +1,13 @@
 """
-Short description of this module's purpose.
-
-Detailed explanation about what this file does and its role in the project.
+This module provides configuration settings for the blockchain application.
 """
 
-# src/config.py
-# This module contains global configuration settings for the project.
+DATABASE_URL = "sqlite:///blockchain.db"
+"""
+The URL for the database used to store blockchain data.
+"""
 
-BLOCK_REWARD = 50  # The reward for mining a block.
-DIFFICULTY = 4  # Mining difficulty level.
-NETWORK_PORT = 5000  # Default network port for nodes.
+NETWORK_PORT = 5000
+"""
+The default network port for communication between nodes.
+"""
