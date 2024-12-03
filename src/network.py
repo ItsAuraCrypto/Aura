@@ -1,16 +1,26 @@
-# src/network.py
-# This module manages the blockchain network and communication between nodes.
+"""
+This module manages network operations, such as broadcasting transactions and syncing nodes.
+"""
 
-class Network:
-    def __init__(self):
-        # Initialize the network with an empty list of nodes.
-        self.nodes = []
+class NetworkManager:
+    """
+    Handles communication between nodes in the blockchain network.
+    """
 
-    def add_node(self, node):
-        """Add a new node to the network."""
-        self.nodes.append(node)
+    def __init__(self, node_address):
+        """
+        Initializes the network manager.
 
-    def broadcast(self, data):
-        """Broadcast data to all nodes in the network."""
-        for node in self.nodes:
-            print(f"Broadcasting data to node {node}: {data}")
+        Args:
+            node_address (str): The address of the current node.
+        """
+        self.node_address = node_address
+
+    def broadcast_transaction(self, transaction):
+        """
+        Broadcasts a transaction to all nodes in the network.
+
+        Args:
+            transaction (dict): The transaction to be broadcasted.
+        """
+        pass
