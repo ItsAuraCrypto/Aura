@@ -1,17 +1,24 @@
-# src/node.py
-# This module manages the node and its network connections.
+"""
+This module represents a node in the blockchain network.
+"""
 
 class Node:
+    """
+    Represents a single node in the blockchain network.
+    """
+
     def __init__(self, address):
-        # Initialize the node with an address and an empty list of peers.
+        """
+        Initializes the node with a unique address.
+
+        Args:
+            address (str): The node's unique address.
+        """
         self.address = address
-        self.peers = []
+        self.blockchain = None
 
-    def connect_to_peer(self, peer_address):
-        """Connect this node to another peer."""
-        self.peers.append(peer_address)
-
-    def broadcast(self, message):
-        """Broadcast a message to all connected peers."""
-        for peer in self.peers:
-            print(f"Message sent to {peer}: {message}")
+    def connect_to_network(self):
+        """
+        Connects the node to the blockchain network.
+        """
+        pass
