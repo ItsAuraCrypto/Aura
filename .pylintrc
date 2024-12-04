@@ -1,6 +1,4 @@
 [MASTER]
-# Specify the Python version to check
-python-version=3.8
 
 # Configuration for which files to check
 ignore=tests,venv
